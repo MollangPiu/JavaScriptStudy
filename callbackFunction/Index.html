@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script>
+
+    setTimeout(function() {
+        alert('test');
+    }, 2000);
+
+
+
+
+    start(first);
+    start(second);
+
+    function start(callTest) {
+        alert('start');
+        callTest();
+    }
+
+    function first() {
+        alert('first');
+    }
+
+    function second() {
+        alert('second');
+    }
+
+    //CallBack 함수 응용하기
+    CallScript(5, function(test) {
+        console.log(test);
+    })
+
+    function CallScript(val, re) {
+        let test = {
+            sb1: val,
+            sb2: val*100,
+            sb3: val+50
+        }
+
+        re(test);
+    }
+
+
+
+</script>
+</body>
+</html>
