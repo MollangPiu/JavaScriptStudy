@@ -32,6 +32,7 @@
     }
 
     //CallBack 함수 응용하기
+    //실행후 F12확인하기.
     CallScript(5, function(test) {
         console.log(test);
     })
@@ -43,6 +44,8 @@
             sb3: val+50
         }
 
+        //return을 대신해서 값을 전달하는 방식이다.
+        //성공과 실패 혹은 결과갑을 호출한 곳으로 전송이 가능해진다.
         re(test);
     }
 
